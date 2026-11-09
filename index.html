@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio-homepage-v1</title>
+  </head>
+  <body>
+    <!--Header & Navigation-->
+    <header class="top-bar">
+      <div class="container">
+        <a href="#" class="top-bar__name">Daniel Cordero</a>
+
+        <nav class="top-bar__menu" aria-label="main navigation">
+          <ul>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!--Hero Section-->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__top">
+            <h1 class="hero__title">Thoughtful Code. Dependable Systems.</h1>
+            <p class="hero__role">software engineer & developer</p>
+          </div>
+          <p class="hero__desc">I'm Daniel, an engineer turning complex problems into clear, reliable, software. I build web products and the systems behind them for first principles to production.</p>
+          <a class="hero__link" href="#work">Explore selected work</a>
+        </div>
+      </section>
+
+      <!--Selected Work Section-->
+      <section id="work">
+        <div class="container">
+          <h2>01 / Selected Work</h2>
+
+          <div class="projects-container">
+            <article class="project-card">
+              <div class="project-card__info-wrapper">
+                <h3 class="project-card__title">Project Title</h3>
+                <p class="project-card__desc">adsfasdfdslkajfsdadsafhdsaaskfadsadskfkadsfshkdfkasjfasksaddasfsadlkjfsadlljfasdjldkfasadsflksfsjlkdfldflkjasdflsfljasdfjll</p>
+
+                <ul class="project-card__tech code" aria-label="technologies used">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+
+                <ul class="project-card__links" aria-label="project links">
+                  <li>
+                    <a href="#" target="_blank">
+                      GitHub <span class="material-symbols-outlined">arrow_outward</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      Live Page <span class="material-symbols-outlined">arrow_outward</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-card__img-wrapper">
+                <img class="project-card__img" src="https://www.gooddata.ai/docs/dashboards/dashboard_demo.webp" alt="Screenshot of Project Title showing the main analytics dashboard and dark mode interface">
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--Background Section-->
+      <section class="background" id="background">
+        <div class="container">
+
+          <h2>02 / Background</h2>
+
+          <div class="background__wrapper">
+
+            <!--Professional Summary-->
+            <div class="summary">
+              <h3 class="summary__title">Curious by nature. Rigorous by practice.</h3>
+              <p class="summary__desc">I'm a software engineer with a computer science engineering foundation and 6+ years building for the web. I care about how systems work and how people experience them.</p>
+              <a class="summary__link" href="#" download="Daniel_Cordero_Resume.pdf">
+                Download résumé (PDF) <span class="material-symbols-outlined">arrow_outward</span>
+              </a>
+            </div>
+
+            <!--Experience Timeline-->
+            <div class="jobs">
+              <article class="job">
+                <time class="job__date" datetime="2022/present">2022 – Present</time>
+                <h4 class="job__title">Job title</h4>
+                <p class="job__company">Company</p>
+                <p class="job__desc">Job description</p>
+              </article>
+              <article class="job">
+                <time class="job__date" datetime="2022/present">2022 – Present</time>
+                <h4 class="job__title">Job title</h4>
+                <p class="job__company">Company</p>
+                <p class="job__desc">Job description</p>
+              </article>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!--Skills Section-->
+      <section id="skills">
+
+        <div class="container">
+
+          <h2>03 / Skills</h2>
+
+          <div class="skills__wrapper">
+
+            <div class="skills-item">
+              <h3 class="skills-item__title" id="languages-heading">Languages</h3>
+              <ul aria-labelledby="languages-heading">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+
+            <div class="skills-item">
+              <h3 class="skills-item__title" id="engineering-heading">Product Engineering & Ecosystem</h3>
+              <ul aria-labelledby="engineering-heading">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Accessible UI (a11y)</li>
+              </ul>
+            </div>
+
+            <!-- Category 2: Frameworks & Runtimes -->
+            <div class="skills-item">
+              <h3 class="skills-item__title" id="systems-heading">Systems & Delivery</h3>
+              <ul aria-labelledby="systems-heading">
+                <li>AWS</li>
+                <li>Docker</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    <!--Footer & Contact Form-->
+    <footer class="footer" id="contact">
+      <div class="container">
+
+        <div class="footer__wrapper">
+          <div class="footer__header">
+            <h2 class="footer__title">Good work starts with a conversation.</h2>
+            <p class="footer__desc">Have a challenging problem, a thoughtful team, or an idea worth exploring? I'd love to hear about it.</p>
+          </div>
+
+          <div class="footer__body">
+            <form class="footer__contact">
+              <div class="input-item">
+                <label for="full_name">* Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required>
+              </div>
+
+              <div class="input-item">
+                <label for="subject">* Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+
+              <div class="input-item">
+                <label for="message">* Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+
+              <button type="submit">Send Email</button>
+            </form>
+
+            <ul>
+              <li>
+                <a href="#">
+                  GitHub <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  LinkedLn <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footer__copyright">&copy; 2026 Daniel Cordero. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

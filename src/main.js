@@ -1,0 +1,9 @@
+// icons
+import '@fontsource-variable/material-symbols-outlined'
+// styles
+import './reset.css'
+import './style.css'
+// fonts
+import '@fontsource-variable/geist'
+import '@fontsource-variable/inter'
+import '@fontsource-variable/jetbrains-mono'
