@@ -10,7 +10,10 @@
     <!-- Header & Navigation -->
     <header class="site-header">
       <div class="container">
-        <a href="#" class="site-header__brand">Daniel Cordero</a>
+        <a href="#" class="site-header__brand">
+          <span class="site-header__brand-short">dc.</span>
+          Daniel Cordero
+        </a>
 
         <nav class="site-header__nav" aria-label="Main navigation">
           <ul class="site-header__menu">
@@ -49,13 +52,13 @@
                 <h3 class="project-card__title">Project Title</h3>
                 <p class="project-card__desc">A high-performance analytics dashboard designed for complex data streams, featuring real-time monitoring and a clean dark-mode interface.</p>
 
-                <ul class="project-card__tech" aria-label="Technologies used">
+                <ul class="project-card__list project-card__tech" aria-label="Technologies used">
                   <li class="project-card__tech-tag">HTML</li>
                   <li class="project-card__tech-tag">CSS</li>
                   <li class="project-card__tech-tag">JavaScript</li>
                 </ul>
 
-                <ul class="project-card__links" aria-label="Project links">
+                <ul class="project-card__list project-card__links" aria-label="Project links">
                   <li class="project-card__links-item">
                     <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">
                       GitHub <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
@@ -96,17 +99,18 @@
 
             <!-- Experience Timeline -->
             <div class="timeline" aria-label="Work experience timeline">
-              <article class="timeline__item">
-                <time class="timeline__date" datetime="2022">2022 – Present</time>
-                <h4 class="timeline__title">Job Title</h4>
-                <p class="timeline__company">Company Name</p>
-                <p class="timeline__desc">Description of key responsibilities, technical achievements, and architectural impact.</p>
+              <article class="job-card">
+                <time class="job-card__date" datetime="2022">2022 – Present</time>
+                <h4 class="job-card__title">Job Title</h4>
+                <p class="job-card__company">Company Name</p>
+                <p class="job-card__desc">Description of key responsibilities, technical achievements, and architectural impact.</p>
               </article>
-              <article class="timeline__item">
-                <time class="timeline__date" datetime="2020/2022">2020 – 2022</time>
-                <h4 class="timeline__title">Previous Job Title</h4>
-                <p class="timeline__company">Previous Company</p>
-                <p class="timeline__desc">Description of previous role, scaling backend services and optimizing frontend bundles.</p>
+
+              <article class="job-card">
+                <time class="job-card__date" datetime="2020/2022">2020 – 2022</time>
+                <h4 class="job-card__title">Previous Job Title</h4>
+                <p class="job__company">Previous Company</p>
+                <p class="job__desc">Description of previous role, scaling backend services and optimizing frontend bundles.</p>
               </article>
             </div>
           </div>
