@@ -7,202 +7,198 @@
     <title>portfolio-homepage-v1</title>
   </head>
   <body>
-    <!--Header & Navigation-->
-    <header class="top-bar">
+    <!-- Header & Navigation -->
+    <header class="site-header">
       <div class="container">
-        <a href="#" class="top-bar__name">Daniel Cordero</a>
+        <a href="#" class="site-header__brand">Daniel Cordero</a>
 
-        <nav class="top-bar__menu" aria-label="main navigation">
-          <ul>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#background">Background</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <nav class="site-header__nav" aria-label="Main navigation">
+          <ul class="site-header__menu">
+            <li class="site-header__item"><a href="#work" class="site-header__link">Work</a></li>
+            <li class="site-header__item"><a href="#background" class="site-header__link">Background</a></li>
+            <li class="site-header__item"><a href="#skills" class="site-header__link">Skills</a></li>
+            <li class="site-header__item"><a href="#contact" class="site-header__link">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
-      <!--Hero Section-->
-      <section class="hero">
+    <main class="main-content" id="main-content">
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="hero-title">
         <div class="container">
-          <div class="hero__top">
-            <h1 class="hero__title">Thoughtful Code. Dependable Systems.</h1>
-            <p class="hero__role">software engineer & developer</p>
+          <div class="hero__header">
+            <h1 id="hero-title" class="hero__title">Thoughtful Code. Dependable Systems.</h1>
+            <p class="hero__role">Software Engineer & Developer</p>
           </div>
-          <p class="hero__desc">I'm Daniel, an engineer turning complex problems into clear, reliable, software. I build web products and the systems behind them for first principles to production.</p>
-          <a class="hero__link" href="#work">Explore selected work</a>
+          <p class="hero__desc">I'm Daniel, an engineer turning complex problems into clear, reliable software. I build web products and the systems behind them from first principles to production.</p>
+          <a class="hero__cta" href="#work">Explore selected work</a>
         </div>
       </section>
 
-      <!--Selected Work Section-->
-      <section id="work">
+      <!-- Selected Work Section -->
+      <section class="work" id="work" aria-labelledby="work-heading">
         <div class="container">
-          <h2>01 / Selected Work</h2>
+          <h2 id="work-heading" class="section-title">
+            <span aria-hidden="true" class="section-title__number">01 /</span> Selected Work
+          </h2>
 
-          <div class="projects-container">
+          <div class="work__list">
             <article class="project-card">
-              <div class="project-card__info-wrapper">
+              <div class="project-card__content">
                 <h3 class="project-card__title">Project Title</h3>
-                <p class="project-card__desc">adsfasdfdslkajfsdadsafhdsaaskfadsadskfkadsfshkdfkasjfasksaddasfsadlkjfsadlljfasdjldkfasadsflksfsjlkdfldflkjasdflsfljasdfjll</p>
+                <p class="project-card__desc">A high-performance analytics dashboard designed for complex data streams, featuring real-time monitoring and a clean dark-mode interface.</p>
 
-                <ul class="project-card__tech code" aria-label="technologies used">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
+                <ul class="project-card__tech" aria-label="Technologies used">
+                  <li class="project-card__tech-tag">HTML</li>
+                  <li class="project-card__tech-tag">CSS</li>
+                  <li class="project-card__tech-tag">JavaScript</li>
                 </ul>
 
-                <ul class="project-card__links" aria-label="project links">
-                  <li>
-                    <a href="#" target="_blank">
-                      GitHub <span class="material-symbols-outlined">arrow_outward</span>
+                <ul class="project-card__links" aria-label="Project links">
+                  <li class="project-card__links-item">
+                    <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                      GitHub <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" target="_blank">
-                      Live Page <span class="material-symbols-outlined">arrow_outward</span>
+                  <li class="project-card__links-item">
+                    <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                      Live Page <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
                     </a>
                   </li>
                 </ul>
               </div>
 
-              <div class="project-card__img-wrapper">
-                <img class="project-card__img" src="https://www.gooddata.ai/docs/dashboards/dashboard_demo.webp" alt="Screenshot of Project Title showing the main analytics dashboard and dark mode interface">
+              <div class="project-card__media">
+                <img class="project-card__image" src="https://www.gooddata.ai/docs/dashboards/dashboard_demo.webp" alt="Screenshot of Project Title showing the main analytics dashboard and dark mode interface" loading="lazy">
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!--Background Section-->
-      <section class="background" id="background">
+      <!-- Background Section -->
+      <section class="background" id="background" aria-labelledby="background-heading">
         <div class="container">
+          <h2 id="background-heading" class="section-title">
+            <span aria-hidden="true" class="section-title__number">02 /</span> Background
+          </h2>
 
-          <h2>02 / Background</h2>
-
-          <div class="background__wrapper">
-
-            <!--Professional Summary-->
+          <div class="background__grid">
+            <!-- Professional Summary -->
             <div class="summary">
               <h3 class="summary__title">Curious by nature. Rigorous by practice.</h3>
               <p class="summary__desc">I'm a software engineer with a computer science engineering foundation and 6+ years building for the web. I care about how systems work and how people experience them.</p>
               <a class="summary__link" href="#" download="Daniel_Cordero_Resume.pdf">
-                Download résumé (PDF) <span class="material-symbols-outlined">arrow_outward</span>
+                Download résumé (PDF) <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
               </a>
             </div>
 
-            <!--Experience Timeline-->
-            <div class="jobs">
-              <article class="job">
-                <time class="job__date" datetime="2022/present">2022 – Present</time>
-                <h4 class="job__title">Job title</h4>
-                <p class="job__company">Company</p>
-                <p class="job__desc">Job description</p>
+            <!-- Experience Timeline -->
+            <div class="timeline" aria-label="Work experience timeline">
+              <article class="timeline__item">
+                <time class="timeline__date" datetime="2022">2022 – Present</time>
+                <h4 class="timeline__title">Job Title</h4>
+                <p class="timeline__company">Company Name</p>
+                <p class="timeline__desc">Description of key responsibilities, technical achievements, and architectural impact.</p>
               </article>
-              <article class="job">
-                <time class="job__date" datetime="2022/present">2022 – Present</time>
-                <h4 class="job__title">Job title</h4>
-                <p class="job__company">Company</p>
-                <p class="job__desc">Job description</p>
+              <article class="timeline__item">
+                <time class="timeline__date" datetime="2020/2022">2020 – 2022</time>
+                <h4 class="timeline__title">Previous Job Title</h4>
+                <p class="timeline__company">Previous Company</p>
+                <p class="timeline__desc">Description of previous role, scaling backend services and optimizing frontend bundles.</p>
               </article>
             </div>
-
           </div>
-
         </div>
       </section>
 
-      <!--Skills Section-->
-      <section id="skills">
-
+      <!-- Skills Section -->
+      <section class="skills" id="skills" aria-labelledby="skills-heading">
         <div class="container">
+          <h2 id="skills-heading" class="section-title">
+            <span aria-hidden="true" class="section-title__number">03 /</span> Skills
+          </h2>
 
-          <h2>03 / Skills</h2>
-
-          <div class="skills__wrapper">
-
-            <div class="skills-item">
-              <h3 class="skills-item__title" id="languages-heading">Languages</h3>
-              <ul aria-labelledby="languages-heading">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+          <div class="skills__grid">
+            <div class="skills__card">
+              <h3 class="skills__card-title" id="languages-heading">Languages</h3>
+              <ul class="skills__list" aria-labelledby="languages-heading">
+                <li class="skills__tag">HTML</li>
+                <li class="skills__tag">CSS</li>
+                <li class="skills__tag">JavaScript</li>
               </ul>
             </div>
 
-            <div class="skills-item">
-              <h3 class="skills-item__title" id="engineering-heading">Product Engineering & Ecosystem</h3>
-              <ul aria-labelledby="engineering-heading">
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Accessible UI (a11y)</li>
+            <div class="skills__card">
+              <h3 class="skills__card-title" id="engineering-heading">Product Engineering & Ecosystem</h3>
+              <ul class="skills__list" aria-labelledby="engineering-heading">
+                <li class="skills__tag">React</li>
+                <li class="skills__tag">Node.js</li>
+                <li class="skills__tag">Accessible UI (a11y)</li>
               </ul>
             </div>
 
-            <!-- Category 2: Frameworks & Runtimes -->
-            <div class="skills-item">
-              <h3 class="skills-item__title" id="systems-heading">Systems & Delivery</h3>
-              <ul aria-labelledby="systems-heading">
-                <li>AWS</li>
-                <li>Docker</li>
-                <li>PostgreSQL</li>
+            <div class="skills__card">
+              <h3 class="skills__card-title" id="systems-heading">Systems & Delivery</h3>
+              <ul class="skills__list" aria-labelledby="skills-heading">
+                <li class="skills__tag">AWS</li>
+                <li class="skills__tag">Docker</li>
+                <li class="skills__tag">PostgreSQL</li>
               </ul>
             </div>
-
           </div>
-
         </div>
-
       </section>
     </main>
 
-    <!--Footer & Contact Form-->
-    <footer class="footer" id="contact">
+    <!-- Footer & Contact Section -->
+    <footer class="site-footer" id="contact" aria-labelledby="contact-heading">
       <div class="container">
-
-        <div class="footer__wrapper">
-          <div class="footer__header">
-            <h2 class="footer__title">Good work starts with a conversation.</h2>
-            <p class="footer__desc">Have a challenging problem, a thoughtful team, or an idea worth exploring? I'd love to hear about it.</p>
+        <div class="site-footer__wrapper">
+          <div class="site-footer__header">
+            <h2 id="contact-heading" class="site-footer__title">Good work starts with a conversation.</h2>
+            <p class="site-footer__desc">Have a challenging problem, a thoughtful team, or an idea worth exploring? I'd love to hear about it.</p>
           </div>
 
-          <div class="footer__body">
-            <form class="footer__contact">
-              <div class="input-item">
-                <label for="full_name">* Full Name:</label>
-                <input type="text" id="full_name" name="full_name" required>
+          <div class="site-footer__body">
+            <form class="contact-form" action="#" method="POST">
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="full_name">Full Name <span aria-hidden="true">*</span></label>
+                <input class="contact-form__input" type="text" id="full_name" name="full_name" required>
               </div>
 
-              <div class="input-item">
-                <label for="subject">* Subject:</label>
-                <input type="text" id="subject" name="subject" required>
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="subject">Subject <span aria-hidden="true">*</span></label>
+                <input class="contact-form__input" type="text" id="subject" name="subject" required>
               </div>
 
-              <div class="input-item">
-                <label for="message">* Message:</label>
-                <textarea id="message" name="message" required></textarea>
+              <div class="contact-form__field">
+                <label class="contact-form__label" for="message">Message <span aria-hidden="true">*</span></label>
+                <textarea class="contact-form__input contact-form__input--textarea" id="message" name="message" rows="5" required></textarea>
               </div>
 
-              <button type="submit">Send Email</button>
+              <button class="contact-form__submit" type="submit">Send Email</button>
             </form>
 
-            <ul>
-              <li>
-                <a href="#">
-                  GitHub <span class="material-symbols-outlined">arrow_outward</span>
+            <ul class="site-footer__social-list" aria-label="Social media links">
+              <li class="site-footer__social-item">
+                <a href="#" class="site-footer__social-link" target="_blank" rel="noopener noreferrer">
+                  GitHub <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  LinkedLn <span class="material-symbols-outlined">arrow_outward</span>
+              <li class="site-footer__social-item">
+                <a href="#" class="site-footer__social-link" target="_blank" rel="noopener noreferrer">
+                  LinkedIn <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <p class="footer__copyright">&copy; 2026 Daniel Cordero. All Rights Reserved.</p>
+        <div class="site-footer__bottom">
+          <p class="site-footer__copyright">&copy; 2026 Daniel Cordero. All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
 
